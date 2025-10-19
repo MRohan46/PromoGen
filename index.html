@@ -1,218 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Developer-focused AI tool that accelerates your projects with intelligent features." />
-  <meta name="theme-color" content="#1a1a1a" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <title>Futuristic Parallax Portfolio — Your Name</title>
+  <meta name="description" content="A futuristic, immersive portfolio with parallax storytelling, smooth scroll, and motion design." />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://your-domain.com/" />
+  <link rel="icon" href="assets/svg/logo.svg" type="image/svg+xml" />
+  <meta property="og:title" content="Futuristic Parallax Portfolio — Your Name" />
+  <meta property="og:description" content="A futuristic, immersive portfolio blending code, motion, and narrative." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Futuristic Parallax Portfolio — Your Name" />
+  <meta name="twitter:description" content="A futuristic, immersive portfolio blending code, motion, and narrative." />
+  <meta name="twitter:image" content="https://your-domain.com/og-image.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-  <title>DevAI — Empower Your Development with AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css" />
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <body>
+  <a href="#home" class="visually-hidden" id="skip-link">Skip to content</a>
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
 
+  <!-- Navigation -->
   <header class="site-header" role="banner">
-    <div class="container header-inner">
-      <a class="logo" href="#" aria-label="DevAI home">
-        <span class="logo-mark" aria-hidden="true">▣</span>
-        <span class="logo-text">DevAI</span>
-      </a>
-
-      <nav class="primary-nav" aria-label="Primary">
-        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" data-nav-toggle>
-          <span class="sr-only">Toggle navigation</span>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        </button>
-        <ul id="nav-menu" class="nav-list" data-nav-menu>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#docs">Docs</a></li>
-          <li><a href="#signin">Sign In</a></li>
-          <li class="nav-cta"><a class="btn btn-accent" href="#get-started">Get Started</a></li>
-        </ul>
-      </nav>
-    </div>
+    <a href="#home" class="brand" aria-label="Homepage">
+      <img src="assets/svg/logo.svg" alt="Logo" class="brand-logo" />
+      <span class="brand-name">YourName</span>
+    </a>
+    <nav class="site-nav" role="navigation" aria-label="Primary">
+      <a href="#work" class="nav-link" data-cursor="View Work">Work</a>
+      <a href="#skills" class="nav-link" data-cursor="Skills">Skills</a>
+      <a href="#contact" class="nav-link cta" data-cursor="Contact">Contact</a>
+    </nav>
   </header>
 
-  <main id="main" tabindex="-1">
-    <section class="hero" aria-label="Hero">
-      <div class="hero-bg" aria-hidden="true">
-        <div class="hero-lines"></div>
-        <div class="hero-glow"></div>
-      </div>
-      <div class="container hero-inner">
-        <div class="hero-content" data-reveal>
-          <h1 class="hero-title"><span class="accent">Empower</span> Your Development with AI</h1>
-          <p class="hero-subtitle">Accelerate your projects with intelligent tools designed for developers.</p>
-          <div class="hero-ctas">
-            <a class="btn btn-accent" href="#get-started">Try It Now</a>
-            <a class="btn btn-ghost" href="#features">Learn More</a>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Hero -->
+  <main id="home" class="hero" role="main">
+    <div class="hero-bg">
+      <div class="layer layer-stars" data-depth="0.1"></div>
+      <div class="layer layer-grid" data-depth="0.2"></div>
+      <div class="layer layer-orb" data-depth="0.35"></div>
+      <div class="layer layer-noise" aria-hidden="true"></div>
+    </div>
 
-    <section id="features" class="section features" aria-label="Features">
-      <div class="container">
-        <header class="section-header" data-reveal>
-          <h2>Built for Developers</h2>
-          <p>High-performance tooling that elevates your workflow.</p>
-        </header>
-        <div class="features-grid">
-          <article class="feature-card" data-reveal>
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M8 6L3 12l5 6M16 6l5 6-5 6" stroke="#00aaff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3>Real-time Code Suggestions</h3>
-            <p>Get context-aware completions that adapt to your codebase.</p>
-          </article>
-          <article class="feature-card" data-reveal>
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 4h14v16H5z" stroke="#00aaff" stroke-width="2"/><path d="M8 8h8M8 12h8M8 16h5" stroke="#00aaff" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <h3>Automated Documentation</h3>
-            <p>Generate clean, understandable docs from your source in seconds.</p>
-          </article>
-          <article class="feature-card" data-reveal>
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M9 19a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm12-14-9 9" stroke="#00aaff" stroke-width="2" stroke-linecap="round"/><path d="M13 5a6 6 0 1 1 6 6" stroke="#00aaff" stroke-width="2"/></svg>
-            </div>
-            <h3>Bug Detection & Fixes</h3>
-            <p>Identify issues early and apply suggested fixes automatically.</p>
-          </article>
-          <article class="feature-card" data-reveal>
-            <div class="feature-icon" aria-hidden="true">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M7 2v6M17 16v6" stroke="#00aaff" stroke-width="2" stroke-linecap="round"/><rect x="3" y="8" width="8" height="6" rx="2" stroke="#00aaff" stroke-width="2"/><rect x="13" y="2" width="8" height="6" rx="2" stroke="#00aaff" stroke-width="2"/></svg>
-            </div>
-            <h3>Seamless Integrations</h3>
-            <p>Connect with your favorite IDEs and CI/CD tools effortlessly.</p>
-          </article>
-        </div>
+    <section class="hero-content" aria-label="Introduction">
+      <h1 class="hero-title">
+        <span class="line">Crafting</span>
+        <span class="line">immersive</span>
+        <span class="line accent">web experiences</span>
+      </h1>
+      <p class="hero-subtitle">Developer + Designer blending code, motion, and narrative.</p>
+      <div class="hero-ctas">
+        <a href="#work" class="btn primary" data-cursor="View Projects">View Work</a>
+        <a href="#contact" class="btn ghost" data-cursor="Let's Talk">Let’s talk</a>
       </div>
     </section>
 
-    <section id="testimonials" class="section testimonials" aria-label="Testimonials">
-      <div class="container">
-        <header class="section-header" data-reveal>
-          <h2>Loved by Developers</h2>
-          <p>What engineers say after adopting DevAI.</p>
-        </header>
-
-        <div class="carousel" aria-roledescription="carousel" aria-label="Developer testimonials" data-carousel>
-          <div class="carousel-viewport" tabindex="0" aria-live="polite">
-            <ul class="carousel-track" data-carousel-track>
-              <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
-                <blockquote>
-                  <p>“DevAI feels like pair programming with a senior engineer who never sleeps.”</p>
-                  <footer>
-                    <div class="avatar" aria-hidden="true">JD</div>
-                    <div class="author">
-                      <strong>Jordan Diaz</strong>
-                      <span>Staff Engineer, HyperCloud</span>
-                    </div>
-                    <span class="company-logo" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v10l-8 4-8-4V7l8-4Z" stroke="#00aaff" stroke-width="2"/></svg>
-                    </span>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
-                <blockquote>
-                  <p>“We cut PR review time in half without compromising quality.”</p>
-                  <footer>
-                    <div class="avatar" aria-hidden="true">AS</div>
-                    <div class="author">
-                      <strong>Amira Singh</strong>
-                      <span>Engineering Manager, Vector Labs</span>
-                    </div>
-                    <span class="company-logo" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#00aaff" stroke-width="2"/></svg>
-                    </span>
-                  </footer>
-                </blockquote>
-              </li>
-              <li class="carousel-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
-                <blockquote>
-                  <p>“From docs to bug fixes—DevAI became an essential part of our stack.”</p>
-                  <footer>
-                    <div class="avatar" aria-hidden="true">LC</div>
-                    <div class="author">
-                      <strong>Liam Chen</strong>
-                      <span>Principal Developer, ByteForge</span>
-                    </div>
-                    <span class="company-logo" aria-hidden="true">
-                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 16l8-12 8 12H4Z" stroke="#00aaff" stroke-width="2"/></svg>
-                    </span>
-                  </footer>
-                </blockquote>
-              </li>
-            </ul>
-          </div>
-          <div class="carousel-controls">
-            <button class="btn btn-ghost icon" data-carousel-prev aria-label="Previous testimonial">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <button class="btn btn-ghost icon" data-carousel-next aria-label="Next testimonial">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-          </div>
-          <div class="carousel-dots" role="tablist" aria-label="Choose testimonial" data-carousel-dots></div>
-        </div>
+    <div class="scroll-indicator" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="mouse">
+        <div class="wheel"></div>
       </div>
-    </section>
-
-    <section id="get-started" class="cta-banner" aria-label="Call to action">
-      <div class="container banner-inner" data-reveal>
-        <h2>Ready to build faster?</h2>
-        <p>Start free today. No credit card required.</p>
-        <a class="btn btn-accent" href="#">Get Started</a>
-      </div>
-    </section>
-
-    <!-- Anchor targets for nav items -->
-    <div id="pricing" class="anchor-target" aria-hidden="true"></div>
-    <div id="docs" class="anchor-target" aria-hidden="true"></div>
-    <div id="signin" class="anchor-target" aria-hidden="true"></div>
-
+    </div>
   </main>
 
+  <!-- Work -->
+  <section id="work" class="section work" aria-label="Selected projects">
+    <div class="section-head">
+      <h2>Selected Work</h2>
+      <p>Interactive builds, product experiments, and motion-driven interfaces.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Example cards; replace images in assets/images -->
+      <article class="project-card" tabindex="0">
+        <div class="project-media" data-bg="assets/images/project-1.jpg"></div>
+        <div class="project-info">
+          <h3>NeoCommerce</h3>
+          <p>Next-gen storefront with 3D product views and microinteractions.</p>
+        </div>
+      </article>
+      <article class="project-card" tabindex="0">
+        <div class="project-media" data-bg="assets/images/project-2.jpg"></div>
+        <div class="project-info">
+          <h3>Pulse Dashboard</h3>
+          <p>Data story with animated charts and spatial navigation.</p>
+        </div>
+      </article>
+      <article class="project-card" tabindex="0">
+        <div class="project-media" data-bg="assets/images/project-3.jpg"></div>
+        <div class="project-info">
+          <h3>Aurora Studio</h3>
+          <p>Creative suite site with fluid typography and depth layers.</p>
+        </div>
+      </article>
+      <article class="project-card" tabindex="0">
+        <div class="project-media" data-bg="assets/images/project-4.jpg"></div>
+        <div class="project-info">
+          <h3>Voyager</h3>
+          <p>Exploratory experience with parallax storytelling and sound design.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills" aria-label="Skills and technologies">
+    <div class="section-head">
+      <h2>Capabilities</h2>
+      <p>Code, design, and motion crafted to perform beautifully.</p>
+    </div>
+
+    <div class="skills-cloud" role="list">
+      <button class="skill-chip" role="listitem" data-level="90">TypeScript</button>
+      <button class="skill-chip" role="listitem" data-level="88">React</button>
+      <button class="skill-chip" role="listitem" data-level="82">GSAP</button>
+      <button class="skill-chip" role="listitem" data-level="80">Three.js</button>
+      <button class="skill-chip" role="listitem" data-level="86">Node.js</button>
+      <button class="skill-chip" role="listitem" data-level="78">Framer Motion</button>
+      <button class="skill-chip" role="listitem" data-level="84">CSS Architecture</button>
+      <button class="skill-chip" role="listitem" data-level="76">Accessibility</button>
+      <button class="skill-chip" role="listitem" data-level="72">SEO</button>
+    </div>
+
+    <div class="skills-bars">
+      <div class="bar"><span>Interaction Design</span><i data-value="0.92"></i></div>
+      <div class="bar"><span>Performance</span><i data-value="0.89"></i></div>
+      <div class="bar"><span>Animation</span><i data-value="0.9"></i></div>
+      <div class="bar"><span>3D / WebGL</span><i data-value="0.8"></i></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact" aria-label="Contact">
+    <div class="contact-inner">
+      <div class="contact-copy">
+        <h2>Let’s build something memorable</h2>
+        <p>I’m available for select collaborations, product work, and motion-led interfaces.</p>
+        <div class="socials" aria-label="Social links">
+          <a href="#" aria-label="Twitter" class="social" data-cursor="Twitter">Tw</a>
+          <a href="#" aria-label="GitHub" class="social" data-cursor="GitHub">Gh</a>
+          <a href="#" aria-label="LinkedIn" class="social" data-cursor="LinkedIn">In</a>
+        </div>
+      </div>
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" autocomplete="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn primary" data-cursor="Send">Send</button>
+      </form>
+    </div>
+
+    <div class="contact-bg">
+      <canvas id="contactCanvas" aria-hidden="true"></canvas>
+    </div>
+  </section>
+
   <footer class="site-footer" role="contentinfo">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a class="logo" href="#" aria-label="DevAI home">
-          <span class="logo-mark" aria-hidden="true">▣</span>
-          <span class="logo-text">DevAI</span>
-        </a>
-        <p class="footnote">Developer-first AI tooling with performance at its core.</p>
-      </div>
-      <nav class="footer-links" aria-label="Legal">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <div class="footer-social" aria-label="Social media">
-        <a href="#" aria-label="GitHub">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.61.07-.61 1 .07 1.54 1.03 1.54 1.03.89 1.53 2.34 1.09 2.91.83.09-.66.35-1.1.63-1.35-2.22-.25-4.56-1.11-4.56-4.93 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.57 9.57 0 0 1 12 6.8c.85 0 1.7.12 2.5.34 1.9-1.3 2.74-1.02 2.74-1.02.56 1.38.21 2.4.1 2.65.64.7 1.02 1.59 1.02 2.68 0 3.83-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .27.18.58.69.48A10 10 0 0 0 12 2Z" fill="#f4f4f4"/></svg>
-        </a>
-        <a href="#" aria-label="Twitter">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 5.92a8.56 8.56 0 0 1-2.46.68 4.3 4.3 0 0 0 1.88-2.37 8.63 8.63 0 0 1-2.73 1.05 4.28 4.28 0 0 0-7.3 3.9A12.15 12.15 0 0 1 3 4.67a4.28 4.28 0 0 0 1.33 5.71 4.23 4.23 0 0 1-1.94-.54v.05a4.28 4.28 0 0 0 3.44 4.2 4.3 4.3 0 0 1-1.93.07 4.29 4.29 0 0 0 4 2.97A8.59 8.59 0 0 1 2 19.53a12.1 12.1 0 0 0 6.56 1.92c7.88 0 12.2-6.53 12.2-12.2 0-.19-.01-.39-.02-.58A8.7 8.7 0 0 0 22 5.92Z" fill="#f4f4f4"/></svg>
-        </a>
-        <a href="#" aria-label="LinkedIn">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 8.98h3.96V21H3V8.98Zm7.07 0H14v1.64h.05c.41-.77 1.43-1.58 2.94-1.58 3.14 0 3.72 2.06 3.72 4.74V21h-3.96v-4.4c0-1.05-.02-2.41-1.47-2.41-1.47 0-1.69 1.15-1.69 2.33V21H10.07V8.98Z" fill="#f4f4f4"/></svg>
-        </a>
-      </div>
-    </div>
-    <div class="container copyright">
-      <small>© 2025 DevAI. All rights reserved.</small>
-    </div>
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
   </footer>
 
-  <noscript>
-    <style>.reveal,[data-reveal]{opacity:1;transform:none}</style>
-  </noscript>
-  <script src="./script.js" defer></script>
+  <!-- Vendor libs (via ESM CDNs) -->
+  <script type="module">
+    import Lenis from 'https://cdn.skypack.dev/@studio-freight/lenis?min';
+    import gsap from 'https://cdn.skypack.dev/gsap@3.12.5?min';
+    import { ScrollTrigger } from 'https://cdn.skypack.dev/gsap@3.12.5/ScrollTrigger?min';
+    gsap.registerPlugin(ScrollTrigger);
+    window.Lenis = Lenis;
+    window.gsap = gsap;
+    window.ScrollTrigger = ScrollTrigger;
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Your Name",
+    "url": "https://your-domain.com/",
+    "sameAs": [
+      "https://twitter.com/yourhandle",
+      "https://github.com/yourhandle",
+      "https://www.linkedin.com/in/yourhandle"
+    ],
+    "jobTitle": "Creative Developer",
+    "image": "https://your-domain.com/og-image.jpg"
+  }
+  </script>
+
+  <script type="module" src="scripts/main.js"></script>
 </body>
 </html>
